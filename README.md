@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏥 Phân Loại Bệnh Tiểu Đường (Diabetes Classification)
 
 ## 📋 Giới Thiệu
@@ -293,3 +294,7 @@ Tài Liệu Tham Khảo
    - Link: https://scikit-learn.org/
 
 
+=======
+# sgu2526k1_csttnt_btnhom
+Doanh ngu
+>>>>>>> 5ca1df1fc5765992d5dc6161c59429f2f93e0325
