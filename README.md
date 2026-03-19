@@ -1,10 +1,10 @@
-# 🏥 Phân Loại Bệnh Tiểu Đường (Diabetes Classification)
+#  Phân Loại Bệnh Tiểu Đường (Diabetes Classification)
 
-## 📋 Giới Thiệu
+##  Giới Thiệu
 
 Dự án này sử dụng **Machine Learning** để phân loại và dự đoán **Bệnh Tiểu Đường** dựa trên **Pima Indians Diabetes Dataset**. Bộ dữ liệu chứa thông tin y tế của 768 bệnh nhân nữ người Ấn Độ Pima có độ tuổi từ 21 trở lên.
 
-## 📊 Thông Tin Dữ Liệu
+##  Thông Tin Dữ Liệu
 
 - **Tổng số mẫu**: 768
 - **Số đặc trưng**: 8 (tất cả là số)
@@ -26,7 +26,7 @@ Dự án này sử dụng **Machine Learning** để phân loại và dự đoá
 | 7 | DiabetesPedigreeFunction | Hàm lịch sử gia đình | Nguy cơ di truyền bệnh tiểu đường |
 | 8 | Age | Tuổi | Tuổi của bệnh nhân (năm) |
 
-## 🔧 Công Nghệ Sử Dụng
+##  Công Nghệ Sử Dụng
 
 - **Python 3.9+**
 - **Libraries chính**:
@@ -36,7 +36,7 @@ Dự án này sử dụng **Machine Learning** để phân loại và dự đoá
   - `matplotlib` & `seaborn`: Biểu đồ
   - `joblib`: Lưu/tải mô hình
 
-## 📈 Quy Trình Thực Hiện
+##  Quy Trình Thực Hiện
 
 ### 1. **Tải Dữ Liệu** 
 - Đọc file CSV
@@ -73,14 +73,14 @@ Dự án này sử dụng **Machine Learning** để phân loại và dự đoá
 - Lưu scaler
 - Lưu thông tin mô hình (JSON)
 
-## 🎯 Kết Quả Chính
+##  Kết Quả Chính
 
 ### Độ Chính Xác (Accuracy)
 
 | Mô Hình | Train | Test |
 |---------|-------|------|
 | Logistic Regression | 79.15% | 71.43% |
-| **Random Forest** ⭐ | 99.35% | **75.32%** |
+| **Random Forest**  | 99.35% | **75.32%** |
 | SVM | 83.55% | 75.32% |
 
 ### AUC-ROC Score
@@ -88,23 +88,23 @@ Dự án này sử dụng **Machine Learning** để phân loại và dự đoá
 | Mô Hình | AUC |
 |---------|-----|
 | Logistic Regression | 0.8230 |
-| **Random Forest** ⭐ | **0.8194** |
+| **Random Forest**  | **0.8194** |
 | SVM | 0.7924 |
 
 ### Tầm Quan Trọng Đặc Trưng (Random Forest)
 
 ```
-Glucose:                    28.84% ⭐⭐⭐ (Quan trọng nhất)
-BMI:                        16.80% ⭐⭐
-DiabetesPedigreeFunction:   12.10% ⭐
-Age:                        12.09% ⭐
+Glucose:                    28.84%  (Quan trọng nhất)
+BMI:                        16.80% 
+DiabetesPedigreeFunction:   12.10% 
+Age:                        12.09% 
 Pregnancies:                 8.30%
 BloodPressure:               7.85%
 Insulin:                     7.29%
 SkinThickness:               6.72%
 ```
 
-## 📁 Cấu Trúc File
+##  Cấu Trúc File
 
 ```
 diabetes_results/
@@ -129,7 +129,7 @@ diabetes_results/
 └── README.md                            (File này)
 ```
 
-## 🚀 Cách Sử Dụng
+##  Cách Sử Dụng
 
 ### Option 1: Chạy File Python
 
@@ -183,7 +183,7 @@ print(f"Dự đoán: {'Có bệnh' if prediction == 1 else 'Không bệnh'}")
 print(f"Xác suất: {probability}")
 ```
 
-## 📊 Giải Thích Các Biểu Đồ
+## Giải Thích Các Biểu Đồ
 
 ### 01_class_distribution.png
 - Biểu đồ cột và tròn hiển thị tỷ lệ bệnh nhân có bệnh vs không bệnh
@@ -247,7 +247,7 @@ SVC(
 )
 ```
 
-## 💡 Nhận Xét & Đề Xuất
+##  Nhận Xét & Đề Xuất
 
 Điểm Mạnh
 - Glucose là chỉ số rất quan trọng → Kiểm tra thường xuyên
@@ -277,19 +277,7 @@ SVC(
    - K-Fold Cross-Validation
    - Stratified K-Fold
 
-LƯU Ý
-- Mô hình này KHÔNG CÓ THỂ thay thế chẩn đoán y tế chuyên nghiệp
-- Độ chính xác 75% có nghĩa là ~25% trường hợp có thể dự đoán sai
-- Luôn tham khảo bác sĩ chuyên khoa trước khi đưa ra quyết định y tế
-- Dữ liệu này từ những nữ bệnh nhân người Ấn Độ Pima, có thể không áp dụng cho các quần thể khác
 
-Tài Liệu Tham Khảo
 
-   - Source: UCI Machine Learning Repository
-   - Link: https://www.kaggle.com/uciml/pima-indians-diabetes-database
-
-   - Smith, J. W., et al. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus.
-
-   - Link: https://scikit-learn.org/
 
 
