@@ -1,4 +1,4 @@
-DANH SÁCH THÀNH VIÊN NHÓM
+DANH SÁCH THÀNH VIÊN NHÓM 6
 
 1. Huỳnh Quí Bảo 3124411025 (Nhóm trưởng)
 2. Tia Quang Minh 3124411167
